@@ -25,7 +25,7 @@ const MovieDetails = ({ movie, onClose }) => {
     <div onClick={onClose} className='w-full min-h-screen fixed inset-0 bg-black/60 flex flex-col items-center justify-end md:justify-center'>
       
       {/* e.stopPropagation stops the modal from closing when clicking inside the content box */}
-      <div onClick={(e) => e.stopPropagation()} className='w-full md:w-[85%] lg:w-[80%] xl:w-[70%] h-[80%] md:h-[70%] md:rounded-2xl overflow-hidden bg-[#161616] overflow-y-auto pb-4'>
+      <div onClick={(e) => e.stopPropagation()} className='w-full md:w-[85%] lg:w-[80%] xl:w-[70%] h-[80%] md:h-[60%] xl:h-[70%] md:rounded-2xl overflow-hidden bg-[#161616] overflow-y-auto pb-4'>
 
         {/* Movie banner image section */}
         <div className="relative w-full h-70 md:h-96 flex-shrink-0">
