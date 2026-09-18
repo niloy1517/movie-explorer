@@ -9,7 +9,7 @@ const Footer = () => {
         {/* Left Section: Logo and Description */}
         <div className="flex flex-col gap-3">
           <div className="flex items-center gap-2 text-white">
-            <Clapperboard className="size-6 text-amber-500" />
+            <Clapperboard className="size-6" />
             <span className="text-2xl font-bold italic tracking-wider">
               Cine<span className="text-amber-500">Max</span>
             </span>
@@ -28,7 +28,7 @@ const Footer = () => {
                 <Link to="/" className="hover:text-amber-500 transition-colors">Home</Link>
               </li>
               <li>
-                <Link to="/movies" className="hover:text-amber-500 transition-colors">Browse Movies</Link>
+                <Link to="/movies" className="hover:text-amber-500 transition-colors">Movies</Link>
               </li>
             </ul>
           </div>

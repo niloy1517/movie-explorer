@@ -50,7 +50,7 @@ const MovieListing = () => {
     <div className='w-full min-h-screen px-4 lg:px-14'>
 
       {/* Search Bar */}
-      <div className="w-full md:max-w-3xl mx-auto pt-6 pb-4 md:pb-10">
+      <div className="w-full md:max-w-3xl mx-auto pt-6 pb-4 md:pb-8">
         <div className="relative">
           <span className="absolute inset-y-0 left-0 flex items-center pl-4 text-gray-400">
             <Search />
@@ -60,12 +60,12 @@ const MovieListing = () => {
             placeholder="Search for a movie or TV show..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full text-white placeholder-gray-500 pl-12 pr-4 py-4 rounded-2xl border border-gray-500 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all shadow-xl text-base md:text-lg"
+            className="w-full text-white placeholder-gray-500 pl-12 pr-4 py-3 rounded-2xl border border-gray-500 focus:outline-none focus:border-amber-500 focus:ring-1 focus:ring-amber-500 transition-all shadow-xl text-sm xl:text-base"
           />
         </div>
 
         {/* Dynamic query feedback status message */}
-        <div className='h-12'>
+        <div className='h-10'>
           {searchQuery && (
             <p className="text-gray-400 pl-2 pt-2">
               Showing results for: <span className="text-amber-500 font-semibold">"{searchQuery}"</span>
@@ -96,7 +96,7 @@ const MovieListing = () => {
             </p>
           </div>
         ) : (
-          <div className='w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6'>
+          <div className='w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3'>
             {
               movies?.map(movie => (
                 <MovieCard
