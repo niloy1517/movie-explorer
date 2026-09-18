@@ -7,7 +7,7 @@ const MovieCard = ({ movie, onSeeDetails }) => {
     const posterImg = movie?.image?.medium || "./default-movie.png";
 
     return (
-        <div className='w-full h-[450px] md:h-[400px] border-2 border-transparent hover:border-white/50 rounded-md overflow-hidden shadow-2xl'>
+        <div className='w-full h-[450px] md:h-[400px] border border-gray-800 md:border-transparent hover:border-white/50 rounded-md overflow-hidden shadow-2xl'>
             
             {/* Movie poster image */}
             <img src={posterImg} alt="poster" className='w-full h-[70%] md:h-[66%] object-center' />

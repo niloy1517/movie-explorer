@@ -85,7 +85,7 @@ const MovieDetails = ({ movie, onClose }) => {
             <h4 className="text-white font-semibold text-lg tracking-wider">
               Summary
             </h4>
-            <p className="text-gray-300 text-base leading-relaxed font-light">
+            <p className="text-gray-300 text-base leading-relaxed font-normal">
               {cleanSummary}
             </p>
           </div>
